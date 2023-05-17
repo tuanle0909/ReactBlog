@@ -20,14 +20,14 @@ export default function CategoryPost({ categoryPosts, categoryId, totalPost }: P
       {categories[categoryId] && (
         <MainTitle type="search">
           <p className="text-center">
-            {totalPost} kết quả tìm kiếm với thể loại "{categories[categoryId]?.name}"
+            {totalPost} kết quả tìm kiếm với thể loại &quot;{categories[categoryId]?.name}&quot;
           </p>
         </MainTitle>
       )}
       {!categories[categoryId] && (
         <MainTitle type="search">
           <p className="text-center">
-            {totalPost} kết quả tìm kiếm với thể loại "{categoryId}"
+            {totalPost} kết quả tìm kiếm với thể loại &quot;{categoryId}&quot;  
           </p>
         </MainTitle>
       )}

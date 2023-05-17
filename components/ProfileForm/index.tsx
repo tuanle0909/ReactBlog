@@ -6,6 +6,7 @@ import useGlobalState from "../../state";
 import userService from "../../service/user";
 import { formatUserInfo } from "../../helpers/formatApi";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
 
@@ -65,9 +66,9 @@ export default function ProfileForm({}: Props) {
     <div className="bg-white p-4 rounded-lg">
       <div className="tcl-row tcl-jc-center">
         <div className="article-item__author-image">
-          <a aria-label="John Doe" href="/" className="tcl-row tcl-jc-center">
+          <Link aria-label="John Doe" href="/" className="tcl-row tcl-jc-center">
             <ImageCustom src={userInfo.simpleLocalAvatar.full} height={100} width={100}></ImageCustom>
-          </a>
+          </Link>
           <p className="text-center">{userInfo.description}</p>
         </div>
       </div>

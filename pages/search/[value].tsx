@@ -18,7 +18,7 @@ export default function SearchPage({ searchPosts, searchValue, totalPost }: Prop
       <NextSeo title={totalPost + " kết quả tìm kiếm với từ khóa " + "'" + searchValue + "'"} description="Tìm kiếm bài viết bằng từ khóa liên quan tại ReactBlog."></NextSeo>
       <div className="tcl-container">
         <MainTitle type="search">
-          {totalPost} kết quả tìm kiếm với từ khóa "{searchValue}"
+          {totalPost} kết quả tìm kiếm với từ khóa &quot;{searchValue}&quot;
         </MainTitle>
         <div className="tcl-row tcl-jc-center">
           {posts.map((e) => {
